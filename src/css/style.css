@@ -1,105 +1,44 @@
+ *{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
 body {
-  margin-top: 0px;
-  margin-left: 0px;
-  width: 1920px;
-  height: 1082px;
+  width: 100%;
+  height: 100%;
+  padding: 4.89% 10.88% 0%;
   background: #DBC2F5 0% 0% no-repeat padding-box;
   opacity: 1;
 }
-
-#navbar {
-  margin-top: 53px;
-  margin-left: 209px;
-  margin-right: 209px;
-  width: 1502px;
-  height: 65px;
-  opacity: 1;
-  font-size: 18px;
-  font-family: DM Sans;
+#header {
+  width: 100%;
+  height: 6%;
 }
-
+#navbar {
+  width: 78.22%;
+  height: 6%;
+  opacity: 1;
+  display: flex;
+}
+ 
 #logo {
-  width: 153px;
-  height: 65px;
+  width: 14.14%;
+  height: 6%;
   background: transparent url('img/Image 2.png') 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
-#dropdown {
-  margin-top: 12px;
-  margin-bottom: 29px;
-  margin-left: 536px;
-  margin-right: 57px;
-  width: 85px;
-  height: 24px;
-  text-align: left;
-  text-decoration: underline;
-  font: normal normal bold 18px/100px DM Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
+#navlinks-container {
+  width: 70.26%;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 18.46% 0 44.61px 28.39%;
+ 
 }
-
-#projects {
-  margin-top: 12px;
-  margin-bottom: 29px;
-  margin-left: 57px;
-  margin-right: 34px;
-  width: 76px;
-  height: 24px;
-  text-align: left;
-  font: normal normal normal 18px/100px DM Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-}
-
-#company {
-  margin-top: 12px;
-  margin-bottom: 29px;
-  margin-left: 34px;
-  margin-right: 34px;
-  width: 86px;
-  height: 24px;
-  text-align: left;
-  font: normal normal normal 18px/100px DM Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-}
-
-#news {
-  margin-top: 12px;
-  margin-bottom: 29px;
-  left: 1117px;
-  width: 56px;
-  height: 24px;
-  text-align: left;
-  font: normal normal normal 18px/100px DM Sans;
-  letter-spacing: 0px;
-  color: #000000;
-  opacity: 1;
-
-}
-
 #contact-button {
-  margin-left: 401px;
-  margin-top: 11px;
-  margin-bottom: 30px;
-  width: 134px;
-  height: 44px;
-  text-align: center;
-  background: #2D2E52 0% 0% no-repeat padding-box;
-  border-radius: 22px;
-  opacity: 1;
-}
-
-#contact-us {
-  width: 137px;
-  height: 24px;
-  text-align: center;
-  font: normal normal normal 18px/100px DM Sans;
-  letter-spacing: 0px;
-  color: #FFFFFF;
-  opacity: 1;
+background: #2D2E52 0% 0% no-repeat padding-box;
+border-radius: 22px;
+opacity: 1;
 }
