@@ -1,44 +1,222 @@
- *{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+:root {
+  --clr-accent-100: hsla(0, 0%, 100%, 1);
+  --clr-primary-400: hsla(269, 72%, 86%, 1);
+  --clr-accent-500: hsla(238, 29%, 25%, 1);
+  --clr-accent-900: hsla(0, 0%, 0%, 1);
+
+  --ff-primary: "DM Sans, Regular";
+
+  --ff-body: var(--ff-primary);
+  --ff-heading: var(--ff-primary);
+
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+  --fw-bold: 700;
+
+  font-size: 16px;
+
+  --fs-600: 1.125rem;
+  --fs-700: 2rem;
+  --fs-900: 5.125rem;
+
+  --fs-body: var(--fs-600);
+  --fs-primary-heading: var(--fs-900);
+  --fs-nav: var(--fs-600);
+  --fs-button: var(--fs-600);
+  --fs-paragraph: var(--fs-700);
+
+  --size-100: 0.33125rem;
+  --size-200: 0.6625rem;
+  --size-300: 0.75rem;
+  --size-400: 1.5rem;
+  --size-500: 2rem;
+  --size-600: 2.125rem;
+  --size-700: 2.75rem;
+  --size-800: 3.3125rem;
+  --size-900: 4.0625rem;
+  --size-1000: 5.375rem;
+  --size-1100: 8.375rem;
+  --size-1200: 8.5625rem;
+  --size-1300: 10.4375rem;
+  --size-1400: 9.5625rem;
+  --size-1500: 13.0625rem;
+  --size-1600: 25.0625rem;
+  --size-1700: 33.5rem;
+  --size-1800: 84.3125rem;
 }
 
+
+@media (min-width: 40rem) {
+  :root {
+    --fs-body: var(--fs-600);
+    --fs-primary-heading: var(--fs-900);
+    --fs-nav: var(--fs-600);
+  }
+}
+
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
 body {
-  width: 100%;
   height: 100%;
-  padding: 4.89% 10.88% 0%;
-  background: #DBC2F5 0% 0% no-repeat padding-box;
+}
+
+/* Set core body defaults */
+body {
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* General styles */
+body {
+  font-size: var(--fs-body);
+  font-family: var(--ff-body);
+  color: var(--clr-accent-900);
+}
+
+.container {
+  --max-width: 1502px;
+  --padding: 13.0625rem;
+
+  width: min(var(--max-width), 100% - (var(--padding) * 2));
+  margin-inline: auto;
+}
+
+.primary-header {
+  padding-top: var(--size-700);
+}
+
+.primary-header[data-overlay]::before {
+  content: "";
+  position: fixed;
+  inset: 0;
   opacity: 1;
 }
-#header {
-  width: 100%;
-  height: 6%;
-}
-#navbar {
-  width: 78.22%;
-  height: 6%;
-  opacity: 1;
+
+
+.nav-wrapper {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
- 
-#logo {
-  width: 14.14%;
-  height: 6%;
+
+
+@media (max-width: 50em) {
+  .primary-navigation {
+    display: none;
+    font-size: var(--fs-nav);
+    font-family: var(--ff-body);
+    color: var(--clr-accent-900);
+    position: fixed;
+
+    padding-top: var(--size-300);
+    padding-bottom: var(--size-500);
+    inset: 7rem var(--size-400) auto;
+    max-width: 83.444rem;
+    margin-left: auto;
+  }
+}
+
+
+.primary-navigation[data-visible] {
+  display: block;
+}
+
+.nav-list {
+  display: flex;
+  text-align: left;
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-nav);
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.solutions {
+  text-decoration: underline;
+  font-weight: var(--fw-bold);
+}
+
+.projects {
+  padding-left: 42px;
+}
+
+.company {
+  padding-left: var(--size-600)
+}
+
+.news {
+  padding-left: 34px;
+}
+
+.logo {
+  width: 153px;
+  height: 65px;
+  /* UI Properties */
   background: transparent url('img/Image 2.png') 0% 0% no-repeat padding-box;
   opacity: 1;
 }
 
-#navlinks-container {
-  width: 70.26%;
-  height: 100%;
+.contact-button {
+  max-width: var(--size-1100);
+  max-height: var(--size-700);
+  background: hsla(238, 29%, 25%, 1) 0% 0% no-repeat padding-box;
+  border-radius: 22px;
+  opacity: 1;
+}
+
+.contact-us {
+  max-width: var(--size-1200);
+  max-height: var(--size-400);
+  text-align: center;
+  letter-spacing: 0px;
+  color: var(--clr-accent-100);
+}
+
+.arrow {
+  max-width: var(--size-200);
+  max-height: var(--size-100);
+  border: 1px solid #000000;
+  opacity: 1;
+}
+
+/* 
+.solutions-container {
   display: flex;
-  align-items: flex-start;
-  padding: 18.46% 0 44.61px 28.39%;
- 
-}
-#contact-button {
-background: #2D2E52 0% 0% no-repeat padding-box;
-border-radius: 22px;
-opacity: 1;
-}
+} */
