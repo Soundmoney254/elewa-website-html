@@ -7,18 +7,6 @@
   --fw-regular: 400;
   --fw-semi-bold: 500;
   --fw-bold: 700;
-
-  font-size: 16px;
-
-  --fs-600: 1.125rem;
-  --fs-700: 2rem;
-  --fs-900: 5.125rem;
-
-  --fs-body: var(--fs-600);
-  --fs-primary-heading: var(--fs-900);
-  --fs-nav: var(--fs-600);
-  --fs-button: var(--fs-600);
-  --fs-paragraph: var(--fs-700);
 }
 
 /* Remove default margin */
@@ -43,7 +31,7 @@ body {
 /* General styles */
 body {
   font-family: "DM Sans", sans-serif;
-  max-width: 120rem;
+  max-width: 1vw;
   max-height: 1vh;
   background: var(--clr-primary-400) 0% 0% no-repeat padding-box;
   opacity: 1;
@@ -52,35 +40,38 @@ body {
 /* Header styles */
 .primary-header {
   display: flex;
-  font-size: clamp(8px, 0.6vw, 14px);
+  font-size: clamp(10px, 14px , 3.5vw);
   max-height: 4.0625em;
-  margin-top: 3.3125em;
+  margin-top: 3.3125em ;
   --margin: 13.0625em;
-  width: clamp(20em, 100% - 2*var(--margin), 93.875em);
-  border: 1px solid red;
-  margin-inline: auto;
+  width: clamp(300px, 1440px, 100%  - 2 * var(--margin));
   align-items: center;
+  margin-inline: auto;
+  /* white-space: nowrap; 
+  overflow: hidden;  */
+  border: 1px solid var(--clr-accent-900);
 }
 
 @media (min-width: 360px) {
   .primary-header {
-    font-size: clamp( 10px, 0.8vw, 16px);
+    font-size: clamp( 12px, 16px, 1.75vw);
   }
 }
 
 @media (min-width: 1440px) {
   *
   .primary-header {
-    font-size: clamp(14px, 1vw, 18px);
+    font-size: clamp(14px, 18px, 1vw);
   }
 }
 
 .nav-list {
+  max-width: 100%;
   display: flex;
   align-items: center;
-  border: 1px solid red;
   box-sizing: border-box;
   padding: 0.75em 0em 1.8em;
+  border: 1px solid var(--clr-accent-900);
 }
 
 .logo {
@@ -95,24 +86,38 @@ body {
   margin: 0em 0.275em 1.8125em 23.9375em;
   text-decoration: underline;
   font-weight: var(--fw-bold);
-  border: 1px solid red;
   text-align: left;
-  
 }
 
 .arrow { 
   max-width: 1em;
-  max-height: 0.5em;
-  border: 1px solid red;
+  max-height: 0.64em;
   box-sizing: border-box;
 
 }
 
+.projects {
+  padding-left: 2.625em;
+}
+
+.company {
+  padding-left: 2.125em;
+}
+
+.news {
+  padding: 3.3125em 13em 1.8125em 2.125em;
+}
+
 .contact-button {
-  border-radius: 1.375rem;
+  border-radius: 1.375em;
+  max-height: 2.75em;
+  max-width: 8.375em;
+  padding: 0.5em;
   background: var(--clr-accent-500) 0% 0% no-repeat padding-box;
-  max-width: 8.375rem;
+
   opacity: 1;
   color: var(--clr-accent-100);
- border: 2px solid red;
- margin-left: auto; }
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; /
+}
