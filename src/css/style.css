@@ -9,29 +9,32 @@
 
 .navlist {
   display: flex;
-  gap: 2rem
+  font-size: 1.125em;
 }
 
 .navlist a {
   color: black;
-  font-size: 15px;
-  font-weight: 600;
+}
 
+.logo {
+  width: 9.5625em;
+  height: 4.0625em;
 }
 
 .contactus-btn {
   display: inline-block;
-  text-decoration: none;
-  padding: 10px;
-  width: 100px;
-  height: 40px;
-  background-color: #2D2E52;
-  font-size: 14px;
+  padding: 1.25em;
+  max-width: 8.375em;
+  max-height: 2.75em;
+  font-size: 1em;
+  background: #2D2E52 0% 0% no-repeat padding-box;
   border: none;
-  border-radius: 30px;
+  border-radius: 1.375em;
   cursor: pointer;
   position: relative;
-  bottom: 10px;
+  opacity: 1;
+  display: flex;
+  align-items: center;
 }
 
 .contactus-btn>a {
@@ -49,28 +52,36 @@
 
 }
 
-
 .hero-text h1 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 40px;
-  line-height: 1;
+  font-size: 5.125em;
+  line-height: 1.1;
   color: black;
-  margin: 0 0 15px;
-
+  margin: 0 0 0.625em;
+  text-align: left;
+  font: normal normal medium;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
 }
 
 .hero-text p {
   color: black;
-  font-size: 25px;
+  font-size: 2.5em;
   line-height: 1.5;
-  margin-bottom: 40px;
-
+  margin-bottom: 1.875em;
+  text-align: left;
+  font: normal normal medium;
+  letter-spacing: 0px;
+  color: #000000;
+  opacity: 1;
+  line-height: 1.1;
 }
 
 .hero-img img {
-  width: 600px;
-  height: 600px;
-
+  max-width: 50.1875em;
+  max-height: 49.75em;
+  background: transparent url('img/Union 2.png') 0% 0% no-repeat padding-box;
+  opacity: 0.85;
 }
 
 .hero-text a {
@@ -79,34 +90,39 @@
 
 }
 
-
 .btn-unlock {
-  background-color: #000000;
+  background: #000000 0% 0% no-repeat padding-box;
   color: #FFFFFF;
   opacity: 1;
-  border-radius: 29px;
+  border-radius: 1.8125em;
   display: flex;
-  width: 11.5rem;
-  height: 2.5rem;
+  width: 16.6875em;
+  height: 3.625em;
   align-items: center;
-  gap: 10px;
   border: none;
-  padding: 0.2rem;
-  justify-content: space-evenly;
+  padding: 1.0625em 1.5em 1.0625em 1.25em;
+  justify-content: space-between;
+  opacity: 1;
+  font-size: 1.125em;
+  font-weight: bold;
+  line-height: 2.625em;
 }
 
 
 .arrow-icon {
   background-color: #FFFFFF;
-  border-radius: 60%;
-  width: 30px;
-  height: 30px;
+  border-radius: 1.8125em;
+  width: 2.625em;
+  height: 2.625em;
+  display: flex;
+  align-items: center;
 }
 
 .arrow-icon>img {
-  width: 15px;
-  height: 28px;
-  text-align: center;
+  width: 3.5em;
+  height: 1em;
+  opacity: 1;
+  align-self: center;
 }
 
 .chevron {
@@ -137,7 +153,6 @@
 
 .menu-list {
   display: flex;
-  gap: 3rem;
 }
 
 /* responsive to tablet screen */
@@ -146,7 +161,6 @@
   .menu-list {
 
     max-height: 0;
-    overflow: hidden;
     flex-direction: column;
     align-items: center;
     transition: all 400ms ease-out;
