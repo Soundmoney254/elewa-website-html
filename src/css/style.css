@@ -12,30 +12,57 @@ body {
 
 header {
     display: flex;
-    padding: 5% 20% 0% 20%;
+    margin: 2% 20% 0% 20%;
+    width: 80%;
+    margin-inline: auto;
+    font-family: DM Sans, regular;
+    font-size: 0.8vw;
 }
 
-header>div {
-    display: flex;
-    flex-flow: row wrap;
-    list-style: none;
+.solutions {
+    font-weight: bold;
+    align-items: center;
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
+    margin-inline: auto;
+    width: 70%;
+}
 
+.logo {
+    width: 9.5625em;
+    height: 4.0625em;
+}
+
+.navbar>ul {
+    list-style: none;
+    display: flex;
+    color: black;
+    width: 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: auto;
 }
 
 .chevron {
     width: 1rem;
     height: 1rem;
+    margin-left: 0.2em;
 }
 
 #solutions {
     font-family: 'Roboto', sans-serif;
     margin: 3% 0 0 18%;
+}
+
+.contact-us-btn {
+    background: #2D2E52 0% 0% no-repeat padding-box;
+    border-radius: 22px;
+    opacity: 1;
+    width: 12em;
+    height: 3em;
+    color: white;
 }
 
 /* education solution design */
